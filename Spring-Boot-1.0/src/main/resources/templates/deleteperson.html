@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Boot</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>Delete Person</h1>
+<form action="#" th:action="@{/delete}" th:object="${delete}" method="get">
+   
+    <p>DeleteId: <input type="number" th:field="*{Id}"/></p>
+   
+</form>
+</body>
+</html>
